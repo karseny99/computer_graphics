@@ -47,7 +47,7 @@ void drawMovingRect() {
 	glRotatef(angle, rect_x, rect_x, 1);
 
 	glBegin(GL_QUADS);
-	glColor3f(0, 1.0, 1.0);
+	glColor3f(sin(angle), sin(rect_x), cos(rect_y));
 	glVertex2f(-0.5, 0.25);
 	glVertex2f(0.5, 0.25);
 	glVertex2f(0.5, -0.25);
