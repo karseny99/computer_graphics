@@ -1,7 +1,6 @@
 #include "config.h"
 #include <iostream>
 
-
 const int width = 1280;
 const int height = 720;
 
@@ -102,7 +101,6 @@ void keyPressed (GLFWwindow* window, int key, int scancode, int action, int mods
 }
 
 int main() {
-	
 	GLFWwindow* window;
 
 	if (!glfwInit()) {
@@ -110,7 +108,7 @@ int main() {
 		return -1;
 	}
 	
-	window = glfwCreateWindow(width, height, "321", nullptr, nullptr);
+	window = glfwCreateWindow(width, height, "unnamed", nullptr, nullptr);
 	glfwMakeContextCurrent(window);
     if (!window) {
         std::cout << "glfwCreateWindow failed!" << std::endl;
