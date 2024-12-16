@@ -1,0 +1,1 @@
+g++ 2.cpp -pedantic -Wall -g -o main -lGLEW -lGL -lGLU -lglfw && ./main
